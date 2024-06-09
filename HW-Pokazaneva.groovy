@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Disk space') {
             steps {
-                echo 'Hello World'
+                sh(script: 'df -h')
             }
         }
     }
